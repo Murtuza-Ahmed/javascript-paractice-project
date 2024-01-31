@@ -2,6 +2,7 @@
 let displayInput = document.getElementById("number");
 let buttons = document.querySelectorAll("button");
 let string = "";
+// let arrayButtons = Array.from(buttons);
 buttons.forEach((button) => {
     button.addEventListener("click", (element) => {
         if (element.target.innerText === "=") {
