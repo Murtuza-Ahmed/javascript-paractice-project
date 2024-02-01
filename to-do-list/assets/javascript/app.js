@@ -1,10 +1,16 @@
+"use strict";
 const inputElement = document.getElementById("inputBox");
 const toDoListOutPut = document.querySelector(".todolist");
 const button = document.querySelector("button");
+let editToDo;
 button.addEventListener("click", () => {
     const getInput = inputElement.value.trim();
     if (getInput === "") {
         alert("You Must Write SomeThing in your To-Do")
+    } else if (button.innerHTML === "Edit") {
+        editToDo.target.previousElementSibling.innerText = inputElement.value;
+        button.innerHTML = "ADD";
+        inputElement.value = "";
     } else {
         // CREATE ELEMENT P
         const li = document.createElement("li");
@@ -28,5 +34,11 @@ button.addEventListener("click", () => {
 toDoListOutPut.addEventListener("click", (element) => {
     if (element.target.innerText === "Remove") {
         toDoListOutPut.removeChild(element.target.parentElement);
+    }
+    if (element.target.innerText === "Edit") {
+        inputElement.value = element.target.previousElementSibling.innerText;
+        inputElement.focus();
+        button.innerHTML = "Edit";
+        editToDo = element;
     }
 })
