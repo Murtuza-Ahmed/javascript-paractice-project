@@ -30,6 +30,8 @@ button.addEventListener("click", () => {
         deleteButton.classList.add("delete", "btn");
         li.appendChild(deleteButton);
     }
+    // INVOKE SAVE LOCAL STORAGE FUNCTION
+    saveLocalStorage(inputElement.innerHTML);
 })
 toDoListOutPut.addEventListener("click", (element) => {
     if (element.target.innerText === "Remove") {
@@ -42,3 +44,8 @@ toDoListOutPut.addEventListener("click", (element) => {
         editToDo = element;
     }
 })
+function saveLocalStorage(item) {
+    let emptyToDoArray = [];
+    emptyToDoArray.push(item)
+    console.log(emptyToDoArray)
+}
