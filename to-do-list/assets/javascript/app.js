@@ -4,7 +4,7 @@ const toDoListOutPut = document.querySelector(".todolist");
 const button = document.querySelector("button");
 let editToDo;
 button.addEventListener("click", () => {
-    const getInput = inputElement.value.trim();
+    const getInput = inputElement.value;
     if (getInput === "") {
         alert("You Must Write SomeThing in your To-Do")
     } else if (button.innerHTML === "Edit") {
@@ -31,7 +31,7 @@ button.addEventListener("click", () => {
         li.appendChild(deleteButton);
     }
     // INVOKE SAVE LOCAL STORAGE FUNCTION
-    saveLocalStorage(inputElement.innerHTML);
+    saveLocalStorage(inputElement);
 })
 toDoListOutPut.addEventListener("click", (element) => {
     if (element.target.innerText === "Remove") {
@@ -44,8 +44,8 @@ toDoListOutPut.addEventListener("click", (element) => {
         editToDo = element;
     }
 })
-function saveLocalStorage(item) {
-    let emptyToDoArray = [];
-    emptyToDoArray.push(item)
-    console.log(emptyToDoArray)
+function saveLocalStorage(getToDo) {
+    // let emptyToDoArray = [];
+    // emptyToDoArray.push(item)
+    console.log(getToDo)
 }
