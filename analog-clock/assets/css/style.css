@@ -51,6 +51,7 @@ body {
     height: 8px;
     border-radius: 50%;
     background-color: #fff;
+    z-index: 2;
 }
 
 .hand {
@@ -63,6 +64,6 @@ body {
 .hand i {
     position: absolute;
     width: 4px;
-    height: 70px;
+    height: var(--height);
     background-color: var(--color);
 }
