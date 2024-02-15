@@ -54,15 +54,15 @@ toDoListOutPut.addEventListener("click", (element) => {
 })
 //  SAVE LOCALSTROGE FUNCTION
 function saveLocalStorage(getToDo) {
-    let existingToDoArray = JSON.parse(localStorage.getItem("ToDoKEY")) || [];
+    let existingToDoArray = JSON.parse(localStorage.getItem("todokey")) || [];
     let getValue = getToDo.value;
     existingToDoArray.push(getValue);
     let jsonConvertFile = JSON.stringify(existingToDoArray);
-    localStorage.setItem("ToDoKEY", jsonConvertFile);
+    localStorage.setItem("todokey", jsonConvertFile);
 }
 // FUNCTION CONTENT LODE
 function getLocalStroge() {
-    let existingToDoArray = JSON.parse(localStorage.getItem("ToDoKEY")) || [];
+    let existingToDoArray = JSON.parse(localStorage.getItem("todokey")) || [];
     existingToDoArray.map((getItem) => {
         const li = document.createElement("li");
         const p = document.createElement("p");
@@ -82,15 +82,18 @@ function getLocalStroge() {
     })
 }
 function deleteToDoList(deleteItem) {
-    let existingToDoArray = JSON.parse(localStorage.getItem("ToDoKEY")) || [];
+    let existingToDoArray = JSON.parse(localStorage.getItem("todokey")) || [];
     let jsonConvertFile = JSON.stringify(existingToDoArray);
-    localStorage.setItem("ToDoKEY", jsonConvertFile);
+    localStorage.setItem("todokey", jsonConvertFile);
     let parameter = deleteItem;
     let toDoIndex = parameter.children[0].innerText;
     let toDoArray = existingToDoArray.indexOf(toDoIndex);
     existingToDoArray.splice(toDoArray, 1);
-    localStorage.setItem("ToDoKEY", JSON.stringify(existingToDoArray));
+    localStorage.setItem("todokey", JSON.stringify(existingToDoArray));
 }
-function editLocalTodo(element) {
-    console.log(element.value)
+function editLocalTodo(item) {
+    let getItem = JSON.parse(localStorage.getItem("todokey"));
+    let getIndex = getItem.indexOf(item.value);
+    getItem[getIndex] = inputElement.value;
+    localStorage.setItem("todokey", JSON.stringify(getItem));
 }
