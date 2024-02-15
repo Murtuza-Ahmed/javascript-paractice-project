@@ -92,7 +92,5 @@ function deleteToDoList(deleteItem) {
     localStorage.setItem("ToDoKEY", JSON.stringify(existingToDoArray));
 }
 function editLocalTodo(element) {
-    let getItem = JSON.parse(localStorage.getItem("ToDoKEY"));
-    console.log(getItem)
     console.log(element.value)
 }
