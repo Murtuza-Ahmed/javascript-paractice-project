@@ -1,4 +1,4 @@
-let timerDisplay = document.querySelector("timerDisplay");
+let timeDisplay = document.querySelector(".timerDisplay");
 let start = document.getElementById("startButton");
 let stopButton = document.getElementById("stopButton");
 let reset = document.getElementById("resetButton");
@@ -7,13 +7,13 @@ let milliSecond = 0;
 let second = 0;
 let minute = 0;
 
-let timerID = null;
+let timerID;
 
 start.addEventListener("click", () => {
     if (timerID !== null) {
         clearInterval(timerID);
     }
-    timerDisplay = setInterval(startTimer, 10);
+    timerID = setInterval(startTimer, 10);
 })
 
 stopButton.addEventListener("click", () => {
@@ -22,7 +22,7 @@ stopButton.addEventListener("click", () => {
 
 reset.addEventListener("click", () => {
     clearInterval(timerID);
-    timerDisplay.innerHTML = `00 : 00 : 00`;
+    timeDisplay.innerHTML = `00 : 00 : 00`;
 })
 
 const startTimer = () => {
@@ -35,9 +35,9 @@ const startTimer = () => {
             minute++;
         }
     }
-    let milliSecondResult = milliSecond < 10 ? `0${milliSecond}` : milliSecond;
-    let secondResult = second < 10 ? `0${second}` : second;
-    let minuteResult = minute < 10 ? `0${minute}` : minute;
+    let milliSecondResult = milliSecond < 10 ? `0 ${milliSecond}` : milliSecond;
+    let secondResult = second < 10 ? `0 ${second}` : second;
+    let minuteResult = minute < 10 ? `0 ${minute}` : minute;
 
-    timerDisplay.innerHTML = `${minuteResult} : ${secondResult} : ${milliSecondResult}`;
+    timeDisplay.innerHTML = `${minuteResult} : ${secondResult} : ${milliSecondResult}`;
 }
