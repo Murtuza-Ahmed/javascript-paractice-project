@@ -14,7 +14,7 @@ button.addEventListener("click", () => {
         button.innerHTML = "ADD";
         // INVOKE SAVE LOCAL STORAFE FUNCTION
         saveLocalStorage(inputElement);
-        editLocalTodo(inputElement);
+        // editLocalTodo(inputElement);
         inputElement.value = "";
     } else {
         // CREATE ELEMENT P
@@ -25,7 +25,7 @@ button.addEventListener("click", () => {
         toDoListOutPut.appendChild(li);
         // INVOKE SAVE LOCAL STORAGE FUNCTION
         saveLocalStorage(inputElement);
-        editLocalTodo(inputElement);
+        // editLocalTodo(inputElement);
         inputElement.value = "";
         // CREATE ELEMENT EDIT
         const editButton = document.createElement("button");
@@ -91,9 +91,9 @@ function deleteToDoList(deleteItem) {
     existingToDoArray.splice(toDoArray, 1);
     localStorage.setItem("todokey", JSON.stringify(existingToDoArray));
 }
-function editLocalTodo(item) {
-    let getItem = JSON.parse(localStorage.getItem("todokey"));
-    let getIndex = getItem.indexOf(item.value);
-    getItem[getIndex] = inputElement.value;
-    localStorage.setItem("todokey", JSON.stringify(getItem));
-}
+// function editLocalTodo(item) {
+//     let getItem = JSON.parse(localStorage.getItem("todokey"));
+//     let getIndex = getItem.indexOf(item.value);
+//     getItem[getIndex] = inputElement.value;
+//     localStorage.setItem("todokey", JSON.stringify(getItem));
+// }
