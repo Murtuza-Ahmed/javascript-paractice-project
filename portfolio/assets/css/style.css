@@ -70,3 +70,36 @@ body {
     height: .2rem;
     background: var(--white-color);
 }
+
+#darkMode-icon:hover {
+    cursor: pointer;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 7%;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.home .home-content {
+    max-width: 45rem;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
