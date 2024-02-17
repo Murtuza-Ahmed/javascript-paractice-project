@@ -4,9 +4,7 @@ html {
     /* overflow: hidden; */
 }
 
-*,
-*::after,
-*::before {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,6 +38,12 @@ body {
     display: flex;
     align-items: center;
     z-index: 100;
+    transition: .5s;
+}
+
+.sticky {
+    background-color: var(--bg-color);
+    box-shadow: 0 .1rem 1rem var(--shadow-color);
 }
 
 .logo {
