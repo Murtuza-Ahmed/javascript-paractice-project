@@ -358,5 +358,5 @@ span {
 }
 
 .portfolio-content .portfolio-box img {
-    width: 100%;
+    min-width: 100%;
 }
