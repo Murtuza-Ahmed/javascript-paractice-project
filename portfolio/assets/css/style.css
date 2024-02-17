@@ -332,3 +332,31 @@ span {
     font-size: 1.5rem;
     margin: 1rem 0 3rem;
 }
+
+.portfolio {
+    padding: 0 0 10rem 0;
+}
+
+.portfolio h2 {
+    margin: 0 0 5rem 0;
+}
+
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 7%;
+}
+
+.portfolio-content .portfolio-box {
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-content .portfolio-box img {
+    width: 100%;
+}
