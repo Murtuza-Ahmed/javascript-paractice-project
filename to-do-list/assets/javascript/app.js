@@ -11,13 +11,11 @@ button.addEventListener("click", () => {
     if (getInput === "") {
         alert("You Must Write SomeThing in your To-Do")
     } else if (button.innerHTML === "Edit") {
-
-        editLocalTodo(editToDo);
         editToDo.target.previousElementSibling.innerText = inputElement.value;
         button.innerHTML = "ADD";
         // INVOKE SAVE LOCAL STORAFE FUNCTION
         saveLocalStorage(inputElement);
-
+        editLocalTodo(editToDo);
         inputElement.value = "";
     } else {
         // CREATE ELEMENT P
@@ -26,15 +24,18 @@ button.addEventListener("click", () => {
         p.innerHTML = getInput;
         li.appendChild(p);
         toDoListOutPut.appendChild(li);
+
         // INVOKE SAVE LOCAL STORAGE FUNCTION
         saveLocalStorage(inputElement);
         editLocalTodo(inputElement);
         inputElement.value = "";
+
         // CREATE ELEMENT EDIT
         const editButton = document.createElement("button");
         editButton.innerText = "Edit";
         editButton.classList.add("edit", "btn");
         li.appendChild(editButton);
+
         // CREATE ELEMENT DELETE
         const deleteButton = document.createElement("button");
         deleteButton.innerText = "Remove";
@@ -59,7 +60,7 @@ toDoListOutPut.addEventListener("click", (element) => {
 
 //  SAVE LOCALSTROGE FUNCTION
 function saveLocalStorage(getToDo) {
-    console.log('getTodo', getToDo)
+    // console.log('getTodo', getToDo)
     let existingToDoArray = JSON.parse(localStorage.getItem("todokey")) || [];
     let getValue = getToDo.value;
     existingToDoArray.push(getValue);
@@ -77,11 +78,13 @@ function getLocalStroge() {
         p.innerHTML = getItem;
         li.appendChild(p);
         toDoListOutPut.appendChild(li);
+
         // CREATE ELEMENT EDIT BUTTON
         const editButton = document.createElement("button");
         editButton.innerText = "Edit";
         editButton.classList.add("edit", "btn");
         li.appendChild(editButton);
+
         // CREATE ELEMENT DELETE BUTTON
         const deleteButton = document.createElement("button");
         deleteButton.innerText = "Remove";
@@ -104,9 +107,9 @@ function deleteToDoList(deleteItem) {
 function editLocalTodo(item) {
     let getItem = JSON.parse(localStorage.getItem("todokey"));
     let getIndex = getItem.indexOf(item.value);
-    console.log('getItem', getItem)
-    console.log('getIndex', getIndex)
-    console.log('item', item.value)
+    // console.log('getItem', getItem)
+    // console.log('getIndex', getIndex)
+    // console.log('item', item.value)
     getItem[getIndex] = inputElement.value;
     localStorage.setItem("todokey", JSON.stringify(getItem));
 }
