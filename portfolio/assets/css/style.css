@@ -410,3 +410,27 @@ span {
 .portfolio-layer a i {
     font-size: 2rem;
 }
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem 1rem;
+}
+
+.testimonial-container .testimonial-wrapper {
+    position: relative;
+    max-width: 90rem;
+    width: 100%;
+    padding: 5rem 3rem;
+}
+
+.testimonial-content .testimonial-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+}
