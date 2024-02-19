@@ -232,9 +232,9 @@ section {
     }
 }
 
-.home .profession-box .profession img {
-    margin: 10px 0 0 1rem;
-}
+/* .home .profession-box .profession img {
+    margin: 0 18rem 10px 0;
+} */
 
 .home .profession-box .profession {
     position: absolute;
@@ -254,7 +254,7 @@ section {
 }
 
 .home .profession-box .profession:nth-child(3) img {
-    margin: 0 0 10px -8rem;
+    margin: 0 8rem 10px 0;
 }
 
 .home .profession-box .profession:nth-child(2) {
@@ -262,7 +262,7 @@ section {
 }
 
 .home .profession-box .profession:nth-child(4) {
-    margin: 0 0 10px 3rem;
+    margin: 0 18rem 10px 0;
 }
 
 .home .profession-box h3 {
