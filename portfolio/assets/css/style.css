@@ -663,7 +663,7 @@ span {
 
     .navbar {
         position: absolute;
-        top: 100%;
+        top: 90%;
         left: 0;
         width: 100%;
         padding: 1rem 3%;
@@ -711,6 +711,7 @@ span {
 
     .home-content h1 {
         font-size: 5rem;
+        text-align: center;
     }
 
     .home-content .social-media a {
@@ -804,5 +805,102 @@ span {
         flex-basis: 100%;
     }
 
+    .services h2,
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
 
+    .portfolio .portfolio-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-container .testimonial-wrapper {
+        padding: 5rem 0;
+    }
+
+    .testimonial-content .testimonial-slide {
+        padding: 3rem 2rem;
+    }
+
+    .testimonial-box .swiper-button-next,
+    .testimonial-box .swiper-button-prev {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:617px) {
+    .portfolio .portfolio-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    #darkMode-icon {
+        right: 6rem;
+    }
+
+    .home {
+        padding: 0 3% 30rem;
+    }
+
+    .home .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg) translate(-110px, -220px);
+    }
+
+    .home .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg) translate(5px, -335px);
+    }
+
+    .home .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg) translate(-105px, -220px);
+    }
+
+    .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-210px, -335px);
+    }
+
+    .contact form .input-box input {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .about-img img {
+        width: 70vw;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:375px) {
+    .home {
+        padding: 1rem 3% 20rem;
+    }
+
+    .home .home-content .social-media {
+        text-align: center;
+    }
+
+    .button {
+        margin: 0 10rem 0;
+    }
+
+    .home .profession-container .profession-box {
+        margin-top: 10rem;
+    }
+
+    .home .profession-container .overlay {
+        margin-top: 4rem;
+    }
 }
