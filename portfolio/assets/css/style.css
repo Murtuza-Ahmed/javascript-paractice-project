@@ -480,3 +480,7 @@ span {
 .testimonial-box .swiper-pagination-bullet {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+.testimonial-box .swiper-pagination-bullet:active {
+    background-color: var(--main-color);
+}
