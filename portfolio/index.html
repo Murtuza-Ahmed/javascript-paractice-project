@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Box Icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -210,12 +212,12 @@
     </section>
 
     <div class="testimonial-container">
-        <h2 class="headind">Valuable <span>Testimonial</span></h2>
+        <h2 class="heading">Valuable <span>Testimonial</span></h2>
 
         <div class="testimonial-wrapper">
-            <div class="testimonial-box">
-                <div class="testimonial-content">
-                    <div class="testimonial-slide">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
                         <img src="./assets/image/slide1.jpg" alt="Slide-Image">
                         <h3>Jackson Levi</h3>
                         <p>
@@ -226,7 +228,33 @@
                             ratione cupiditate ipsum nam?
                         </p>
                     </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="./assets/image/slide2.jpg" alt="Slide-Image">
+                        <h3>Folar Ocean</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta debitis quia unde delectus.
+                            Impedit at quos autem soluta veritatis, possimus dignissimos, architecto suscipit, ratione
+                            nobis iure molestias quae. Accusantium possimus facilis asperiores laudantium magni officiis
+                            modi, vel cupiditate odit! Explicabo non doloribus dolore commodi assumenda laudantium
+                            ratione cupiditate ipsum nam?
+                        </p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="./assets/image/slide3.jpg" alt="Slide-Image">
+                        <h3>Graysen</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta debitis quia unde delectus.
+                            Impedit at quos autem soluta veritatis, possimus dignissimos, architecto suscipit, ratione
+                            nobis iure molestias quae. Accusantium possimus facilis asperiores laudantium magni officiis
+                            modi, vel cupiditate odit! Explicabo non doloribus dolore commodi assumenda laudantium
+                            ratione cupiditate ipsum nam?
+                        </p>
+                    </div>
                 </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -242,6 +270,8 @@
 
     <!-- SCRIPT FILE -->
     <script src="./assets/js/app.js"></script>
+    <!-- Swiper JS File> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
