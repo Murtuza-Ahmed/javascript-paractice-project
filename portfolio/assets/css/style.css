@@ -484,3 +484,46 @@ span {
 .testimonial-box .swiper-pagination-bullet:active {
     background-color: var(--main-color);
 }
+
+.contact h2 {
+    margin: 0 0 3rem 0;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin: 0 auto 3rem auto;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0 .1rem .3rem var(--shadow-color);
+}
+
+.contact form .input-box input {
+    flex-basis: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .button {
+    margin: 2rem 0 0 0;
+    cursor: pointer;
+}
