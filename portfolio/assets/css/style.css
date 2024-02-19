@@ -527,3 +527,32 @@ span {
     margin: 2rem 0 0 0;
     cursor: pointer;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--main-color);
+}
+
+.footer-text p {
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+.footer-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background-color: var(--white-color);
+    border-radius: .8rem;
+    border: .2rem solid var(--main-color);
+}
+
+.footer-icon a i {
+    font-size: 2.5rem;
+    color: #333;
+}
