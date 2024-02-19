@@ -23,6 +23,12 @@ html {
     --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
+.dark-mode {
+    --bg-color: #0b061f;
+    --text-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, 0.7);
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -93,6 +99,10 @@ body {
     cursor: pointer;
 }
 
+#darkMode-icon {
+    font-size: 3rem;
+}
+
 #menu-icon {
     font-size: 3.6rem;
     color: var(--white-color);
@@ -143,6 +153,10 @@ section {
     transition: 0.5s ease;
 }
 
+.social-media a i {
+    font-size: 2.50rem;
+}
+
 .home-content .social-media a:hover {
     background-color: var(--main-color);
 }
@@ -188,6 +202,38 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: professionRotate 10s ease-out infinite;
+}
+
+@keyframes professionRotate {
+
+    0%,
+    20% {
+        transform: rotate(0deg);
+    }
+
+    25%,
+    45% {
+        transform: rotate(-90deg);
+    }
+
+    50%,
+    70% {
+        transform: rotate(-180deg);
+    }
+
+    75%,
+    95% {
+        transform: rotate(-270deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.home .profession-box .profession img {
+    margin: 10px 0 0 1rem;
 }
 
 .home .profession-box .profession {
@@ -204,12 +250,19 @@ section {
 }
 
 .home .profession-box .profession:nth-child(1) img {
-    margin: 0 9rem 0 0;
+    margin: 0 18rem 10px 0;
 }
 
-.home .profession-box .profession:nth-child(2),
+.home .profession-box .profession:nth-child(3) img {
+    margin: 0 0 10px -8rem;
+}
+
+.home .profession-box .profession:nth-child(2) {
+    padding: 0 0 20px 30px;
+}
+
 .home .profession-box .profession:nth-child(4) {
-    padding: 0 0 20px 0;
+    margin: 0 0 10px 3rem;
 }
 
 .home .profession-box h3 {
