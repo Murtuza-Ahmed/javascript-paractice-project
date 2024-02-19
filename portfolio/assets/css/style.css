@@ -426,6 +426,13 @@ span {
     padding: 5rem 3rem;
 }
 
+.testimonial-wrapper .testimonial-box {
+    /* background-color: #000; */
+    padding: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
 .testimonial-content .testimonial-slide {
     display: flex;
     align-items: center;

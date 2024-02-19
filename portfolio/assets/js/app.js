@@ -6,7 +6,7 @@ window.onscroll = () => {
 // SWIPER SCRIPT FILE
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 50,
     grabCursor: true,
     loop: true,
     pagination: {
