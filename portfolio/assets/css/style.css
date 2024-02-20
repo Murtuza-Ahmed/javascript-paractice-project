@@ -250,7 +250,7 @@ section {
 }
 
 .home .profession-box .profession:nth-child(1) img {
-    margin: 0 18rem 10px 0;
+    margin: 0 15rem 10px 4rem;
 }
 
 .home .profession-box .profession:nth-child(3) img {
@@ -258,7 +258,7 @@ section {
 }
 
 .home .profession-box .profession:nth-child(2) {
-    padding: 0 0 20px 30px;
+    padding: 0 30px 20px 30px;
 }
 
 .home .profession-box .profession:nth-child(4) {

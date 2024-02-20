@@ -285,9 +285,9 @@
         transform: rotate(0deg) translate(5px, -335px);
     }
 
-    .home .profession-box .profession:nth-child(3) {
+    /* .home .profession-box .profession:nth-child(3) {
         transform: rotate(90deg) translate(-105px, -220px);
-    }
+    } */
 
     .home .profession-box .profession:nth-child(4) {
         transform: rotate(180deg) translate(-210px, -335px);
@@ -295,6 +295,14 @@
 
     .contact form .input-box input {
         flex-basis: 100%;
+    }
+
+    .home .profession-container .profession-box {
+        position: fixed;
+        top: 60%;
+        left: -18px;
+        border-radius: 0;
+        width: 100%;
     }
 }
 
@@ -310,6 +318,18 @@
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+
+    .home .profession-box .profession:nth-child(2) {
+        padding: 0 5px 30px 5px;
+    }
+
+    .home .profession-container .profession-box {
+        position: fixed;
+        top: 60%;
+        left: -5px;
+        border-radius: 0;
+        width: 100%;
     }
 }
 
@@ -332,5 +352,21 @@
 
     .home .profession-container .overlay {
         margin-top: 4rem;
+    }
+
+    .home .profession-box .profession:nth-child(2) {
+        padding: 0 5px 30px 5px;
+    }
+
+    .home .profession-box .profession:nth-child(3) img {
+        margin: 0 0 10px 0;
+    }
+
+    .home .profession-container .profession-box {
+        position: fixed;
+        top: 60%;
+        left: -5px;
+        border-radius: 0;
+        width: 100%;
     }
 }
