@@ -132,3 +132,22 @@ body {
     font-size: 1rem;
     font-weight: 700;
 }
+
+.location-not-found {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.location-not-found img {
+    width: 80%;
+}
+
+.location-not-found h1 {
+    font-size: 1.10rem;
+    color: #6b6b6b;
+    margin-block-end: 20px;
+}
