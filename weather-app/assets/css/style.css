@@ -96,3 +96,39 @@ body {
     font-weight: 700;
     text-transform: capitalize;
 }
+
+.weather-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.humidity,
+.wind {
+    display: flex;
+    align-items: center;
+}
+
+.humidity {
+    margin: 0 2rem 0 0;
+}
+
+.wind {
+    margin: 0 0 0 2rem;
+}
+
+.weather-detail i {
+    font-size: 2rem;
+}
+
+.weather-detail .text {
+    margin-left: .40rem;
+    font-size: 1rem;
+}
+
+.text span {
+    font-size: 1rem;
+    font-weight: 700;
+}
