@@ -28,7 +28,7 @@ body {
     flex-direction: column;
 }
 
-.overlay h2 {
+.overlay .title {
     font-size: 2rem;
     text-align: center;
     color: #fff;
