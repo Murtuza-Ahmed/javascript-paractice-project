@@ -34,3 +34,35 @@ body {
     color: #fff;
     margin-top: 1rem;
 }
+
+.column {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.column div {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.column input {
+    width: 50%;
+    height: 50px;
+    display: inline-flex;
+    background: transparent;
+    border: 1px groove rgba(221, 162, 13, 0.404);
+    border-radius: 5px;
+    outline: transparent;
+}
+
+.column div label {
+    margin: 1rem 0 0 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
