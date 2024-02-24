@@ -70,3 +70,15 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
+@media only screen and (min-width:320px) and (max-width:430px) {
+    body {
+        height: 250vh;
+        width: fit-content;
+        overflow: hidden;
+    }
+
+    .overlay {
+        justify-content: center;
+    }
+}
