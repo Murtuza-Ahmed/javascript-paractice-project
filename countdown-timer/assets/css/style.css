@@ -5,18 +5,17 @@
 }
 
 body {
-    background-image: url("../image/df38107f20dab26cd2690ff66911ee4d.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 100vh;
-    width: 100%;
-
 }
 
 .main {
     width: 100%;
     height: 100%;
+    background-image: url("../image/df38107f20dab26cd2690ff66911ee4d.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .overlay {
