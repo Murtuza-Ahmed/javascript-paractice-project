@@ -60,7 +60,7 @@ body {
     border-radius: 5px;
     outline: transparent;
     text-align: center;
-    color: #fff;
+    color: rgb(255, 183, 0);
     font-size: 1.50rem;
     font-weight: 700;
 }
