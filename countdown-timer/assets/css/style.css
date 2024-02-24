@@ -59,6 +59,10 @@ body {
     border: 1px groove rgba(221, 162, 13, 0.404);
     border-radius: 5px;
     outline: transparent;
+    text-align: center;
+    color: #fff;
+    font-size: 1.50rem;
+    font-weight: 700;
 }
 
 .column div label {
