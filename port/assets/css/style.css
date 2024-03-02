@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(23, 23, 255, 0.1);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+  margin: 2rem 5%;
+  padding: 1rem 0 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-name h2 {
+  color: #000;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 66%;
+}
+
+.form {
+  flex-basis: 16%;
+}
+
+.form select {
+  padding: .5rem 2rem .5rem 0;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+  border: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form select:focus {
+  border: 1px groove #333;
+}
+
+nav .ul {
+  flex-basis: 50%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+}
